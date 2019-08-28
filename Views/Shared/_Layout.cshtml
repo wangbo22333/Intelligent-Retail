@@ -58,7 +58,7 @@
                 <a href="index.html" class="navbar-brand">
                     <small>
                         <i class="fa fa-leaf"></i>
-                        Ace Admin
+                        智能零售柜
                     </small>
                 </a>
             </div>
@@ -326,16 +326,21 @@
                         </ul>
                     </li>
 
+                    <li class="light-blue dropdown-modal"><a asp-area="" asp-controller="Home" asp-action="Index">首页</a></li>
+                    <li class="light-blue dropdown-modal"><a asp-area="" asp-controller="Home" asp-action="About">关于我们</a></li>
+                    <li class="light-blue dropdown-modal"><a asp-area="" asp-controller="Home" asp-action="Contact">联系我们</a></li>
                     <li class="light-blue dropdown-modal">
-                        <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                            <img class="nav-user-photo" src="/images/avatars/user.jpg" alt="Jason's Photo">
-                            <span class="user-info">
-                                <small>Welcome,</small>
-                                Jason
-                            </span>
+                        @*<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                <img class="nav-user-photo" src="/images/avatars/user.jpg" alt="Jason's Photo">
+                <span class="user-info">
+                    <small>Welcome,</small>
+                    Jason
+                </span>
 
-                            <i class="ace-icon fa fa-caret-down"></i>
-                        </a>
+                <i class="ace-icon fa fa-caret-down"></i>
+            </a>*@
+
+                        <partial name="_LoginPartial" />
 
                         <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
                             <li>
@@ -364,7 +369,7 @@
                     </li>
                 </ul>
             </div>
-        </div><!-- /.navbar-container -->
+        </div>
     </div>
 
     @*<partial name="_CookieConsentPartial" />*@
